@@ -1,70 +1,18 @@
-# Getting Started with Create React App
+# Purpose
+This was a simple personal project. The problem I had was that there weren't any websites with typing definitions for vocabulary,
+which I found problematic because I feel it is more efficient for learning and speed.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+# Features
+## Creating Vocab
+You can put in a name, and then type vocabulary and definitions one by one with the pairs being shown on the screen.
+A problem I ran into was having to switch between a foreign keyboard input and english input when typing vocabulary
+and definitions, so to solve that I created a high-speed mode, in which you first type all of the vocabulary, and then 
+switch to your other language. Clicking the "done" button saves the new vocab and definitions
 
-## Available Scripts
+## Training
+When training on the vocab you can reverse the definitions and vocabulary to instead match the definition to the correct 
+term, if you desire. Clicking "Enter" on an answer will let you progress, if you get it wrong nothing will happen and you
+can try again. If you click "Enter" when there is nothing in the input field, or you already pressed "Enter" on the same answer, the vocabulary word will appear underneath the input field. Pressing "Enter" again will allow you to move on.
 
-In the project directory, you can run:
-
-### `npm start`
-
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## Merging
+If you want to create a small subset of words to add later or want to simply update a set, you can create it and then selected all of the "topics" you would like to merge together, and then click the merge button to merge them. It will automatically set the name of this new grouping to be the name of the first "topic" being merged in the list of choices.
