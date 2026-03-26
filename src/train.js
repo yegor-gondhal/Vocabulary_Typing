@@ -54,7 +54,7 @@ function Train({ data, selected}) {
         if (e.key === "Enter" && (def[idx] == value || giveup)) {
             setValue("");
             setPrevvalue("")
-            setGiveup(false)
+            setGiveup(false) // Hi
 
             if ((idx+1)%foreign.length === 0) {
                 shuffle();
