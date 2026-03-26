@@ -107,6 +107,16 @@ function Create({ data, setData }) {
                 <input className="foreign_input input" placeholder="Foreign Word" type="text" ref={foreignRef} onKeyDown={forEnter1} onChange={(e) => setForword(e.target.value)} value={forword} />
                 <input className="def_input input" placeholder="Definition" type="text" ref={defRef} onKeyDown={defEnter1} onChange={(e) => setDefword(e.target.value)} value={defword} />
                 <button className="done_button blue_button" onClick={doneClick}>Done</button>
+                <div className="speed_container">
+                    {
+                        Array.from({ length }).map((_, index) => (
+                            <div key={index} className="pair_container">
+                                <div>{foreign[index]}</div>
+                                <div>{def[index]}</div>
+                            </div>
+                        ))
+                    }
+                </div>
             </>
         )
     }
