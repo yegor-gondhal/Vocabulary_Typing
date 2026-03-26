@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+
+body {
+    background: #222222;
+}
+
+.buttonh {
+    position: absolute;
+    background: #333333;
+    border: 2px solid #0daebd;
+    border-radius: 10px;
+    width: 120px;
+    height: 50px;
+    text-align: center;
+    color: #ababab;
+    font-size: 25px;
+    user-select: none;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+.buttonh:hover {
+    cursor: pointer;
+}
+
+.create_button {
+    top: 60px;
+    left: 50px;
+}
+
+.train_button {
+    top: 60px;
+    left: 200px;
+}
+
+.merge_button {
+    top: 60px;
+    left: 350px;
+}
+.selections {
+    position: relative;
+    display: flex;
+    gap: 20px;
+    border: 2px solid white;
+    border-radius: 10px;
+    top: 150px;
+    left: 50px;
+    width: 1000px;
+    height: 400px;
+    padding: 10px;
+}
+.mycheckbox {
+    display: none;
+}
+.checkbox_container {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    background: #333333;
+    border: 2px solid green;
+    border-radius: 10px;
+    color: #ababab;
+    font-size: 20px;
+    user-select: none;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+.checkbox_container:hover {
+    cursor: pointer;
+}
+.checkbox_container:has(.mycheckbox:checked) {
+    border-color: red;
+}
+
+.small_button {
+    position: absolute;
+    background: #333333;
+    border: 2px solid #0daebd;
+    border-radius: 5px;
+    width: 90px;
+    height: 35px;
+    text-align: center;
+    color: #ababab;
+    font-size: 16px;
+    user-select: none;
+    font-family: "Quicksand";
+    font-weight: 500;
+}
+.small_button:hover {
+    cursor: pointer;
+}
+
+.select_all_button {
+    top: 115px;
+    left: 850px;
+}
+.unselect_all_button {
+    top: 115px;
+    left: 950px;
+}
