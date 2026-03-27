@@ -34,7 +34,7 @@ function Train({ data, selected}) {
         }
         setForeign(foreign1);
         setDef(def1);
-        console.log("Shuffled!")
+        console.log(def1)
     }
 
     useEffect(() => {
@@ -75,10 +75,11 @@ function Train({ data, selected}) {
             setPrevvalue("")
             setGiveup(false)
 
-            setIdx(prev => prev+1)
-            if (idx%foreign.length === 0) {
+            if ((idx+1)%foreign.length === 0) {
                 shuffle();
                 setIdx(0);
+            } else {
+                setIdx(prev => prev+1);
             }
         } else if (e.key === "Enter" && (value === "" || value === prevvalue)) {
             setGiveup(true)
